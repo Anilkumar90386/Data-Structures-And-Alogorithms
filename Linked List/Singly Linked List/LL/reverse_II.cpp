@@ -36,7 +36,7 @@ node* Reverse_II(node* head,int left,int right)
      prev=temp;
      temp=temp->next;
    }
-
+   return head;
 }
 int main()
 {

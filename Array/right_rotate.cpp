@@ -1,22 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool isprime(int n)
-{
-    for(int i=2;i<n;i++)
-    {
-        if(n%i==0)return false;
-    }
-    return true;
-}
 int main()
 {
-    int n;
-    cin>>n;
-    for(int i=3;i<=n;i++)
+    int n,k;
+    cin>>n>>k;
+    int arr[n];
+    for(int i=0;i<n;i++)
     {
-        if(isprime(i))
-        {
-            cout<<i<<" ";
-        }
+        cin>>arr[i];
+    }
+    reverse(arr,arr+n);
+    reverse(arr,arr+k);
+    reverse(arr+k,arr+n);
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
     }
 }

@@ -35,8 +35,7 @@ int connected(Node* head)
             ind++;  
         }
         else{
-            cnt++;
-           
+            cnt++;          
         }
         temp=temp->next;
     }
